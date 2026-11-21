@@ -1,0 +1,419 @@
+{
+  "modelos": [
+    {
+      "id": "office",
+      "nombre": "Smart Bin IA Office",
+      "subtitulo": "2 Compartimentos · Oficinas y Comercio",
+      "etiquetaSegmento": "Oficinas y Retail",
+      "capacidad": "60 litros (2 × 30 L)",
+      "separacion": "Orgánico · PET y Envases",
+      "mecanismo": "Doble compuerta asíncrona",
+      "autonomia": "72 h batería / Red eléctrica",
+      "precio": 1280,
+      "disponibilidad": "Entrega inmediata",
+      "imagen": "/assets/aistudio/smartbin_office_e2cd200c.jpg",
+      "alt": "Diagrama de dimensiones y vistas del prototipo Smart Bin IA modelo corporativo de dos fracciones: orgánico y envases PET.",
+      "descripcion": "Optimizado para oficinas corporativas, recepciones y áreas de trabajo colaborativo con separación ágil de residuo orgánico y envases.",
+      "recomendado": false
+    },
+    {
+      "id": "enterprise",
+      "nombre": "Smart Bin IA Enterprise",
+      "subtitulo": "4 Compartimentos · Sedes y Universidades",
+      "etiquetaSegmento": "Estándar Corporativo",
+      "capacidad": "180 litros (4 × 45 L)",
+      "separacion": "Orgánico, PET, Metales, Papel",
+      "mecanismo": "Sensores ultrasónicos de 4 canales",
+      "autonomia": "Pantalla E-Ink con guía visual",
+      "precio": 2890,
+      "disponibilidad": "Garantía oficial de 3 años",
+      "imagen": "/assets/aistudio/smartbin_empresarial_d68a9e11.jpg",
+      "alt": "Vistas frontal, lateral y superior del Smart Bin IA Enterprise de cuatro compartimentos: orgánico, plástico PET, metales y papel.",
+      "descripcion": "Sistema completo de cuatro flujos sincronizados para orgánico, plástico PET certificado, metales ligeros y papel o cartón.",
+      "recomendado": true
+    },
+    {
+      "id": "industrial",
+      "nombre": "Smart Bin IA Industrial",
+      "subtitulo": "Uso Rudo · Centros Logísticos",
+      "etiquetaSegmento": "Plantas y Logística",
+      "capacidad": "450 litros (compactado 5:1)",
+      "separacion": "Prensa hidráulica de 600 kgf",
+      "mecanismo": "Blindaje IK10 e IP66 exterior",
+      "autonomia": "GPS y acelerómetro integrados",
+      "precio": 4750,
+      "disponibilidad": "Compra directa o arrendamiento",
+      "imagen": "/assets/aistudio/smartbin_industria_eb4e9293.jpg",
+      "alt": "Especificaciones técnicas y vistas del Smart Bin IA versión industrial de uso rudo con prensa hidráulica integrada.",
+      "descripcion": "Construcción industrial con compactador electromecánico interno 5:1 para grandes volúmenes y operación en andenes.",
+      "recomendado": false
+    }
+  ],
+  "capacidadesEdge": [
+    {
+      "material": "Plástico PET y Termoplásticos",
+      "sensor": "Espectrometría NIR + Visión RGB",
+      "precision": 99.4,
+      "compuerta": "Compuerta B (Canal Azul)",
+      "estado": "Activo"
+    },
+    {
+      "material": "Materia Orgánica y Compost",
+      "sensor": "Cámara IR Térmica + Mapa 3D",
+      "precision": 98.9,
+      "compuerta": "Compuerta A (Canal Verde)",
+      "estado": "Activo"
+    },
+    {
+      "material": "Celulosa, Cartón y Papel Blanco",
+      "sensor": "Análisis de Textura y Densidad",
+      "precision": 97.6,
+      "compuerta": "Compuerta D (Canal Amarillo)",
+      "estado": "Activo"
+    },
+    {
+      "material": "Aluminio, Latas y Metales Ligeros",
+      "sensor": "Sensor Inductivo + Inferencia Visual",
+      "precision": 99.1,
+      "compuerta": "Compuerta C (Canal Gris)",
+      "estado": "Activo"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "CL-9021",
+      "nombre": "Hospital Ángeles Metropolitano",
+      "categoria": "Cuenta Platinum",
+      "sectorIcono": "hospital",
+      "correo": "compras.medicas@angeles-metro.mx",
+      "telefono": "+52 (55) 5424-7200 ext. 410",
+      "direccion": "Vialidad de la Barranca 24, Edificio Central, Huixquilucan, Edo. Méx., C.P. 52763",
+      "direccionCorta": "Vialidad de la Barranca 24, Huixquilucan",
+      "contactoNombre": "Dra. Claudia Fuentes V.",
+      "contactoCargo": "Directora de Operaciones y Sostenibilidad",
+      "unidades": 14,
+      "modelo": "Mod. UltraClean 120 L (PET + Orgánico)",
+      "tieneMantenimiento": true,
+      "etiquetaMantenimiento": "Mantenimiento Activo (SLA 4 h)",
+      "direccionVerificada": true,
+      "despachoPendiente": false,
+      "ultimaSync": "Hace 4 min",
+      "capacidadActual": "73.4% prom.",
+      "recoleccion": "Recolección programada mañana",
+      "sensorEstado": "99.8% en línea",
+      "firmware": "Firmware v3.4.1",
+      "accesibilidad": [
+        "Rampa de descarga sin desnivel aprobada para transporte pesado",
+        "Puertas con apertura mínima de 120 cm hacia cuartos limpios",
+        "Horario preferente: 06:00 a 10:00 (evitar hora pico de urgencias)"
+      ],
+      "oportunidadEtica": {
+        "texto": "Este cliente genera un alto volumen de residuos inertes. Conviene recomendar el recambio trimestral del filtro HEPA de olores y ampliar la cobertura SLA a 2 horas.",
+        "etiqueta": "+ 4 Sensores Odor-Guard"
+      },
+      "bitacora": [
+        {
+          "titulo": "Llamada de incorporación y calibración",
+          "detalle": "Realizada por Daniel M. con Dra. Fuentes. Se ajustó el umbral de detección de polietileno.",
+          "fecha": "Ayer, 16:30 h"
+        },
+        {
+          "titulo": "Confirmación de despacho inicial",
+          "detalle": "Guía de rastreo #99283 enviada y confirmada con acuse de recibo en rampa médica.",
+          "fecha": "14 octubre, 11:15 h"
+        }
+      ]
+    },
+    {
+      "id": "CL-8442",
+      "nombre": "Universidad Tecnológica del Valle",
+      "categoria": "Sector Educativo",
+      "sectorIcono": "educacion",
+      "correo": "sustentabilidad@utvalle.edu.mx",
+      "telefono": "+52 (55) 7890-1122",
+      "direccion": "Av. Instituto Politécnico 3400, Gustavo A. Madero, Ciudad de México, C.P. 07360",
+      "direccionCorta": "Av. Instituto Politécnico 3400, CDMX",
+      "contactoNombre": "Ing. Marcos Saldívar R.",
+      "contactoCargo": "Coordinador de Campus Sustentable",
+      "unidades": 28,
+      "modelo": "Mod. Campus 240 L Tri-Flujo",
+      "tieneMantenimiento": false,
+      "etiquetaMantenimiento": "Solo Hardware (Sin suscripción)",
+      "direccionVerificada": true,
+      "despachoPendiente": true,
+      "ultimaSync": "Garantía base 12 meses vigente",
+      "capacidadActual": "Pendiente de alta",
+      "recoleccion": "Instalación próxima semana",
+      "sensorEstado": "Pre-calibrado en planta",
+      "firmware": "Firmware v3.4.2",
+      "accesibilidad": [
+        "Acceso vehicular a nivel de piso sin escalones en explanada sur",
+        "Confirmación previa por mensaje SMS 30 minutos antes de arribo",
+        "Señalética visual y táctil en alto contraste solicitada en bahías"
+      ],
+      "oportunidadEtica": {
+        "texto": "Al tratarse de un campus de alto tránsito estudiantil, ofrecer revisión preventiva semestral opcional previa a períodos de exámenes evita desgaste prematuro de compuertas.",
+        "etiqueta": "Revisión Semestral Opcional"
+      },
+      "bitacora": [
+        {
+          "titulo": "Validación de bahía de descarga accesible",
+          "detalle": "Confirmado acceso libre para unidad con plataforma hidráulica.",
+          "fecha": "Hoy, 09:40 h"
+        },
+        {
+          "titulo": "Orden de compra universitaria aprobada",
+          "detalle": "Adquisición directa de 28 equipos sin contrato de mantenimiento recurrente.",
+          "fecha": "12 octubre, 14:20 h"
+        }
+      ]
+    },
+    {
+      "id": "CL-7210",
+      "nombre": "GreenHub Cowork Polanco",
+      "categoria": "Cuenta Corporativa",
+      "sectorIcono": "oficina",
+      "correo": "facilities@greenhub-mex.io",
+      "telefono": "+52 (55) 9138-0050",
+      "direccion": "Campos Elíseos 204, Polanco V Sección, Miguel Hidalgo, Ciudad de México, C.P. 11560",
+      "direccionCorta": "Campos Elíseos 204, Polanco",
+      "contactoNombre": "Lic. Sofía Mendizábal",
+      "contactoCargo": "Jefa de Instalaciones y Bienestar",
+      "unidades": 6,
+      "modelo": "Mod. Smart Bin Office 60 L",
+      "tieneMantenimiento": true,
+      "etiquetaMantenimiento": "Mantenimiento Activo (SLA 8 h)",
+      "direccionVerificada": true,
+      "despachoPendiente": false,
+      "ultimaSync": "Auto-calibración completada",
+      "capacidadActual": "48.0% prom.",
+      "recoleccion": "Recolección cada martes y viernes",
+      "sensorEstado": "100% en línea",
+      "firmware": "Firmware v3.4.1",
+      "accesibilidad": [
+        "Rampa certificada con pendiente suave y elevador de carga con Braille",
+        "Pasillos de 140 cm libres de obstáculos hasta zonas de café",
+        "Protocolo silencioso para entregas entre 07:00 y 08:30 h"
+      ],
+      "oportunidadEtica": {
+        "texto": "El consumo de cápsulas de aluminio y vasos biodegradables creció 22%. Sugerir actualización gratuita del modelo de visión para separar compostables certificados.",
+        "etiqueta": "Actualización Modelo IA"
+      },
+      "bitacora": [
+        {
+          "titulo": "Auto-calibración óptica completada",
+          "detalle": "Los 6 equipos reportan 99.3% de precisión tras limpieza preventiva.",
+          "fecha": "Hace 2 días"
+        }
+      ]
+    },
+    {
+      "id": "CL-6119",
+      "nombre": "Operadora Logística Tlalnepantla",
+      "categoria": "Industrial y Logística",
+      "sectorIcono": "industria",
+      "correo": "compras@oplogistica-mex.com",
+      "telefono": "+52 (55) 5390-8800",
+      "direccion": "Vía Dr. Gustavo Baz 2160, Industrial Tlalnepantla, Edo. Méx., C.P. 54030",
+      "direccionCorta": "Vía Dr. Gustavo Baz 2160, Tlalnepantla",
+      "contactoNombre": "Ing. Ricardo Benítez P.",
+      "contactoCargo": "Gerente de Seguridad e Higiene Industrial",
+      "unidades": 10,
+      "modelo": "Mod. HeavyDuty Industrial 450 L",
+      "tieneMantenimiento": false,
+      "etiquetaMantenimiento": "Garantía Base (Solo Hardware)",
+      "direccionVerificada": true,
+      "despachoPendiente": false,
+      "ultimaSync": "Hace 18 min",
+      "capacidadActual": "81.2% prom.",
+      "recoleccion": "Compactación al 80%, retiro hoy",
+      "sensorEstado": "98.9% en línea",
+      "firmware": "Firmware v3.3.9",
+      "accesibilidad": [
+        "Andén con rampa electro-hidráulica niveladora",
+        "Caseta de seguridad con lector audible y señalización luminosa",
+        "Requiere chaleco de alta visibilidad para personal de entrega"
+      ],
+      "oportunidadEtica": {
+        "texto": "Los compactadores acumulan 18,000 ciclos sin servicio externo. Informar disponibilidad de revisión puntual bajo demanda sin obligar a póliza anual.",
+        "etiqueta": "Diagnóstico Puntual Bajo Demanda"
+      },
+      "bitacora": [
+        {
+          "titulo": "Alerta informativa de llenado 80%",
+          "detalle": "Notificación automática enviada al equipo interno de logística.",
+          "fecha": "Hoy, 08:15 h"
+        }
+      ]
+    }
+  ],
+  "planesMantenimiento": [
+    {
+      "id": "demanda",
+      "nombre": "Bajo Demanda",
+      "etiqueta": "Sin compromiso mensual",
+      "descripcion": "Intervención puntual para instalaciones individuales o proyectos en fase piloto.",
+      "precioAnual": 149,
+      "precioEvento": 149,
+      "unidadAnual": "/ incidente + repuestos",
+      "unidadEvento": "/ incidente + repuestos",
+      "destacado": false,
+      "caracteristicas": [
+        "Diagnóstico técnico en sitio o remoto según viabilidad",
+        "Cambio de servomotores y recalibración de cámara óptica",
+        "Garantía de mano de obra de 90 días naturales",
+        "Sin monitoreo continuo ni cuotas recurrentes"
+      ],
+      "textoBoton": "Solicitar Servicio Puntual"
+    },
+    {
+      "id": "preventivo",
+      "nombre": "Preventivo Anual",
+      "etiqueta": "Recomendado para flotas",
+      "descripcion": "Mantiene la máxima precisión de clasificación y extiende la vida útil de los actuadores.",
+      "precioAnual": 38,
+      "precioEvento": 45,
+      "unidadAnual": "/ equipo al mes (anual)",
+      "unidadEvento": "/ equipo al mes (mensual)",
+      "destacado": true,
+      "caracteristicas": [
+        "2 revisiones integrales al año con reporte técnico",
+        "Limpieza ultrasónica de lentes y sensores infrarrojos",
+        "Actualización de modelos IA para nuevos envases",
+        "Reemplazo preventivo incluido de filtros HEPA, sellos y engranes"
+      ],
+      "textoBoton": "Contratar Plan Preventivo"
+    },
+    {
+      "id": "enterprise",
+      "nombre": "Enterprise Care",
+      "etiqueta": "Máxima disponibilidad",
+      "descripcion": "Diseñado para hospitales, aeropuertos y plantas de operación continua.",
+      "precioAnual": 72,
+      "precioEvento": 85,
+      "unidadAnual": "/ equipo al mes (SLA 4 h)",
+      "unidadEvento": "/ equipo al mes (mensual)",
+      "destacado": false,
+      "caracteristicas": [
+        "Soporte 24/7 en sitio con cuadrilla de emergencia",
+        "Recambio garantizado de piezas en menos de 24 horas",
+        "Telemetría continua de vibración, temperatura y par motor",
+        "Reposición de equipo completo ante daño crítico sin costo adicional"
+      ],
+      "textoBoton": "Consultar Acuerdo Corporativo"
+    }
+  ],
+  "repuestos": [
+    {
+      "sku": "ECO-CAM-4K-AI",
+      "nombre": "Módulo Óptico / Cámara AI 4K",
+      "disponibilidad": "En stock (48 h)",
+      "enStock": true,
+      "descripcion": "Unidad de visión computacional con acelerador NPU integrado de 4 TOPS, lente gran angular antiempañante y sellado IP65.",
+      "precio": 280,
+      "imagen": "/assets/aistudio/camara_smartbin_9aca8a01.jpg",
+      "alt": "Módulo óptico de cámara AI 4K de repuesto para Smart Bin IA con carcasa protectora metálica."
+    },
+    {
+      "sku": "ECO-SRV-LOWP",
+      "nombre": "Servomotores de Compuerta",
+      "disponibilidad": "En stock (24 h)",
+      "enStock": true,
+      "descripcion": "Motorreductor sin escobillas de bajo consumo (12 V) con engranes de acero templado para 2.5 millones de aperturas.",
+      "precio": 115,
+      "imagen": "/assets/aistudio/servos_smartbin_33039f13.jpg",
+      "alt": "Servomotor industrial de compuerta con engranes metálicos de precisión para Smart Bin IA."
+    },
+    {
+      "sku": "ECO-SEN-USPROX",
+      "nombre": "Sensores Ultrasónicos y Proximidad",
+      "disponibilidad": "En stock (24 h)",
+      "enStock": true,
+      "descripcion": "Juego de transductores dobles para medición volumétrica de llenado en tiempo real y detección de manos sin contacto.",
+      "precio": 85,
+      "imagen": "/assets/aistudio/sensores_smartbin_b5cc78ce.jpg",
+      "alt": "Par de sensores ultrasónicos y de proximidad industriales para medición de llenado en Smart Bin IA."
+    },
+    {
+      "sku": "ECO-PWR-LIFEP4",
+      "nombre": "Batería de Respaldo LiFePO4",
+      "disponibilidad": "Bajo pedido (72 h)",
+      "enStock": false,
+      "descripcion": "Módulo de energía autónomo con regulador solar inteligente y hasta 72 horas continuas sin conexión a la red.",
+      "precio": 195,
+      "imagen": "/assets/aistudio/bateria_smartbin_607903cc.jpg",
+      "alt": "Batería de respaldo LiFePO4 con módulo controlador solar integrado para Smart Bin IA."
+    }
+  ],
+  "metricasPorPeriodo": {
+    "30dias": {
+      "etiqueta": "Últimos 30 días",
+      "masaTotal": "384.6",
+      "masaTendencia": "+18.4% frente al mes anterior",
+      "co2Evitado": "219.4",
+      "co2Equivalencia": "Equivale a 84,200 km de transporte fósil evitado",
+      "pureza": "98.7%",
+      "purezaDetalle": "Grado alimentario · Solo 1.3% de contaminación cruzada",
+      "valorRecuperado": "€ 64.8K",
+      "valorDetalle": "Ingresos por valorización de subproductos en planta",
+      "fracciones": [
+        { "nombre": "Plásticos PET y Termoplásticos", "ton": "142.2", "porcentaje": 37, "color": "pet" },
+        { "nombre": "Materia Orgánica y Compost", "ton": "118.0", "porcentaje": 31, "color": "organico" },
+        { "nombre": "Papel, Cartón y Celulosa", "ton": "75.8", "porcentaje": 20, "color": "papel" },
+        { "nombre": "Aluminio y Metales Ligeros", "ton": "48.6", "porcentaje": 12, "color": "metal" }
+      ],
+      "precisionPromedio": "99.2%",
+      "arboles": "3,420 Árboles",
+      "agua": "480,000 Litros",
+      "energia": "89,200 kWh",
+      "circularidad": "94.6 / 100",
+      "actualizado": "Actualizado hace 12 min"
+    },
+    "trimestre": {
+      "etiqueta": "Último trimestre",
+      "masaTotal": "1,112.4",
+      "masaTendencia": "+21.7% frente al trimestre previo",
+      "co2Evitado": "648.0",
+      "co2Equivalencia": "Equivale a 248,500 km de transporte fósil evitado",
+      "pureza": "98.5%",
+      "purezaDetalle": "Grado alimentario · Solo 1.5% de contaminación cruzada",
+      "valorRecuperado": "€ 189.2K",
+      "valorDetalle": "Ingresos trimestrales por valorización de subproductos",
+      "fracciones": [
+        { "nombre": "Plásticos PET y Termoplásticos", "ton": "422.7", "porcentaje": 38, "color": "pet" },
+        { "nombre": "Materia Orgánica y Compost", "ton": "333.7", "porcentaje": 30, "color": "organico" },
+        { "nombre": "Papel, Cartón y Celulosa", "ton": "222.5", "porcentaje": 20, "color": "papel" },
+        { "nombre": "Aluminio y Metales Ligeros", "ton": "133.5", "porcentaje": 12, "color": "metal" }
+      ],
+      "precisionPromedio": "99.1%",
+      "arboles": "9,980 Árboles",
+      "agua": "1,410,000 Litros",
+      "energia": "261,400 kWh",
+      "circularidad": "94.2 / 100",
+      "actualizado": "Actualizado hace 12 min"
+    },
+    "anual": {
+      "etiqueta": "Año completo",
+      "masaTotal": "4,390.8",
+      "masaTendencia": "+29.1% interanual certificado",
+      "co2Evitado": "2,540.6",
+      "co2Equivalencia": "Equivale a 975,000 km de transporte fósil evitado",
+      "pureza": "98.9%",
+      "purezaDetalle": "Grado alimentario · Solo 1.1% de contaminación cruzada",
+      "valorRecuperado": "€ 742.5K",
+      "valorDetalle": "Ingresos acumulados por subproductos certificados",
+      "fracciones": [
+        { "nombre": "Plásticos PET y Termoplásticos", "ton": "1,668.5", "porcentaje": 38, "color": "pet" },
+        { "nombre": "Materia Orgánica y Compost", "ton": "1,361.1", "porcentaje": 31, "color": "organico" },
+        { "nombre": "Papel, Cartón y Celulosa", "ton": "834.3", "porcentaje": 19, "color": "papel" },
+        { "nombre": "Aluminio y Metales Ligeros", "ton": "526.9", "porcentaje": 12, "color": "metal" }
+      ],
+      "precisionPromedio": "99.3%",
+      "arboles": "39,400 Árboles",
+      "agua": "5,580,000 Litros",
+      "energia": "1,028,000 kWh",
+      "circularidad": "95.4 / 100",
+      "actualizado": "Actualizado hace 12 min"
+    }
+  }
+}
